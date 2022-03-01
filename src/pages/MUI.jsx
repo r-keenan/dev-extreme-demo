@@ -3,6 +3,7 @@ import { useState } from "react";
 import Button from "@mui/material/Button";
 import Box from "@mui/material/Box";
 import TextField from "@mui/material/TextField";
+import DataGrid from "../components/DataGrid";
 
 function Mui() {
   const [count, setCount] = useState(0);
@@ -37,6 +38,9 @@ function Mui() {
             value={count}
           />
         </Box>
+        <div style={{ marginTop: "20px", width: "100%" }}>
+          <DataGrid />
+        </div>
       </header>
     </div>
   );
