@@ -10,7 +10,7 @@ export default function MuiDataGrid() {
   //});
 
   const columns = [
-    { field: "empId", headerName: "Employee Id", type: "number", width: 125 },
+    { field: "empId", headerName: "Employee Id", type: "number", width: 140 },
     {
       field: "firstName",
       headerName: "First Name",
