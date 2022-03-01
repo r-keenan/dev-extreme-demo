@@ -10,23 +10,28 @@ export default function MuiDataGrid() {
   //});
 
   const columns = [
-    { field: "empId", headerName: "Employee Id", type: "number", width: 140 },
+    {
+      field: "empId",
+      headerName: "Employee Id",
+      type: "number",
+      minWidth: 140,
+    },
     {
       field: "firstName",
       headerName: "First Name",
-      width: 150,
+      width: 175,
       editable: true,
     },
     {
       field: "lastName",
       headerName: "Last Name",
-      width: 150,
+      width: 175,
       editable: true,
     },
     {
       field: "issue",
       headerName: "Issue",
-      width: 350,
+      width: 400,
       editable: true,
     },
     {
@@ -39,7 +44,7 @@ export default function MuiDataGrid() {
       field: "actionTaken",
       headerName: "Action Taken",
       sortable: true,
-      width: 300,
+      width: 500,
     },
   ];
 
@@ -57,7 +62,7 @@ export default function MuiDataGrid() {
       lastName: "Debbie",
       firstName: "Heller",
       issue: "Drinking on the job",
-      filedBy: "Ross Keenan",
+      filedBy: "Kyle Wickersham",
       actionTaken: "Mandatory AA meetings",
     },
     {
@@ -65,7 +70,7 @@ export default function MuiDataGrid() {
       lastName: "Tyrone",
       firstName: "Biggums",
       issue: "Under the influence of drugs while at work",
-      filedBy: "Ross Keenan",
+      filedBy: "Self",
       actionTaken: "Mandatory NA Meetings",
     },
   ];
@@ -89,6 +94,7 @@ export default function MuiDataGrid() {
         getRowId={(row) => row.empId}
         sortModel={sortModel}
         onSortModelChange={(newSortModel) => setSortModel(newSortModel)}
+        minWidth="fit-content"
       />
     </div>
   );

@@ -20,7 +20,7 @@ function DevExtreme() {
           style={{ marginBottom: "15px" }}
         />
         <input type="number" value={count} />
-        <div style={{ height: 400, width: "100%" }}>
+        <div style={{ height: 400, width: "100%", marginTop: "20px" }}>
           <DeDataGrid />
         </div>
       </header>

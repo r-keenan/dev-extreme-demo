@@ -1,54 +1,29 @@
-let s = 123456789;
-function random() {
-  s = (1103515245 * s + 12345) % 2147483647;
-  return s % (10 - 1);
-}
-
 export function generateData(count) {
   let i;
-  const surnames = [
-    "Smith",
-    "Johnson",
-    "Brown",
-    "Taylor",
-    "Anderson",
-    "Harris",
-    "Clark",
-    "Allen",
-    "Scott",
-    "Carter",
+  const ids = [666, 1, 2];
+  const surnames = ["Case", "Heller", "Biggums"];
+  const names = ["Krystal", "Debbie", "Tyrone"];
+  const issues = [
+    "Mean to new hire",
+    "Drinking on the job",
+    "Under the influence of drugs while at work",
   ];
-  const names = [
-    "James",
-    "John",
-    "Robert",
-    "Christopher",
-    "George",
-    "Mary",
-    "Nancy",
-    "Sandra",
-    "Michelle",
-    "Betty",
+  const filledBys = ["Ross Keenan", "Kyle Wickersham", "Self"];
+  const actionTakens = [
+    "Moved her to another building",
+    "Mandatory AA meetings",
+    "Mandatory NA Meetings",
   ];
-  const gender = ["Male", "Female"];
   const items = [];
-  const startBirthDate = Date.parse("1/1/1975");
-  const endBirthDate = Date.parse("1/1/1992");
 
   for (i = 0; i < count; i += 1) {
-    const birthDate = new Date(
-      startBirthDate +
-        Math.floor((random() * (endBirthDate - startBirthDate)) / 10)
-    );
-    birthDate.setHours(12);
-
-    const nameIndex = random();
     const item = {
-      id: i + 1,
-      firstName: names[nameIndex],
-      lastName: surnames[random()],
-      gender: gender[Math.floor(nameIndex / 5)],
-      birthDate,
+      id: ids[i],
+      firstName: names[i],
+      lastName: surnames[i],
+      issue: issues[i],
+      filledby: filledBys[i],
+      actionTaken: actionTakens[i],
     };
     items.push(item);
   }
