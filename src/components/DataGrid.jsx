@@ -2,7 +2,7 @@ import { useState } from "react";
 import { DataGrid, GridToolbar } from "@mui/x-data-grid";
 import { useDemoData } from "@mui/x-data-grid-generator";
 
-export default function ToolbarGrid() {
+export default function MuiDataGrid() {
   //const { data } = useDemoData({
   //  dataSet: "Commodity",
   //  rowLength: 100,
@@ -26,7 +26,7 @@ export default function ToolbarGrid() {
     {
       field: "issue",
       headerName: "Issue",
-      width: 200,
+      width: 350,
       editable: true,
     },
     {

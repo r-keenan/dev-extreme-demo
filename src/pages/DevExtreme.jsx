@@ -3,6 +3,7 @@ import Button from "devextreme-react/button";
 import { Form, SimpleItem } from "devextreme-react/form";
 import { useState } from "react";
 import "devextreme/dist/css/dx.light.css";
+import DeDataGrid from "../components/DeDataGrid";
 
 function DevExtreme() {
   const [count, setCount] = useState(0);
@@ -19,6 +20,9 @@ function DevExtreme() {
           style={{ marginBottom: "15px" }}
         />
         <input type="number" value={count} />
+        <div style={{ height: 400, width: "100%" }}>
+          <DeDataGrid />
+        </div>
       </header>
     </div>
   );
