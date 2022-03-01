@@ -14,37 +14,37 @@ export default function MuiDataGrid() {
       field: "empId",
       headerName: "Employee Id",
       type: "number",
-      minWidth: 140,
+      flex: 1,
     },
     {
       field: "firstName",
       headerName: "First Name",
-      width: 175,
+      flex: 1,
       editable: true,
     },
     {
       field: "lastName",
       headerName: "Last Name",
-      width: 175,
+      flex: 1,
       editable: true,
     },
     {
       field: "issue",
       headerName: "Issue",
-      width: 400,
+      flex: 2,
       editable: true,
     },
     {
       field: "filedBy",
       headerName: "Filed By",
-      width: 250,
+      flex: 1,
       editable: true,
     },
     {
       field: "actionTaken",
       headerName: "Action Taken",
       sortable: true,
-      width: 500,
+      flex: 2,
     },
   ];
 
