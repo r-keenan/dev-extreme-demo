@@ -14,6 +14,7 @@ function Mui() {
   return (
     <div className="muiContainer">
       <header className="App-header">
+        <h1 style={{ color: "black", fontSize: "1.5rem" }}>MUI</h1>
         <Button
           variant="contained"
           text="Increment Counter"

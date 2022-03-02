@@ -13,6 +13,7 @@ function DevExtreme() {
   return (
     <div className="deContainer">
       <header className="App-header">
+        <h1 style={{ color: "black", fontSize: "1.5rem" }}>Dev Extreme</h1>
         <Button
           text="Increment"
           onClick={incrementCount}
