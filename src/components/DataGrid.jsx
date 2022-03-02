@@ -30,6 +30,7 @@ export default function MuiDataGrid() {
         sortModel={sortModel}
         onSortModelChange={(newSortModel) => setSortModel(newSortModel)}
         minWidth="fit-content"
+        components={{ Toolbar: GridToolbar }}
       />
     </div>
   );
